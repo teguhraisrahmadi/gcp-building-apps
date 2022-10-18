@@ -44,7 +44,53 @@ Now, lets do it,
 9. Choose region just single zone.
 <br> ![Capture](Material/12.png) <br>
 
-10. 
+10. In customize instance, choose machine type like this.
+<br> ![Capture](Material/13.png) <br>
+
+11. And for storage, choose HDD.
+<br> ![Capture](Material/14.png) <br>
+
+12. And then, click create instance.
+<br> ![Capture](Material/15.png) <br>
+
+13. The sql instance was created. Then go to connection option.
+<br> ![Capture](Material/16.png) <br>
+
+14. Click “Add Network”.
+<br> ![Capture](Material/17.png) <br>
+
+15. Fill the name and CIDR like this and click done.
+<br> ![Capture](Material/18.png) <br>
+
+16. And save the network.
+<br> ![Capture](Material/19.png) <br>
+
+17. Now we will connect the sql instance to vm instance was we created before. Save the ip address from sql instance.
+<br> ![Capture](Material/20.png) <br>
+
+18. Then go to the vm instance. And open ssh cloud shell. Run “sudo apt-get update”
+<br> ![Capture](Material/21.png) <br>
+
+19. And then run “sudo apt-get install mysql-client”
+<br> ![Capture](Material/22.png) <br>
+
+20. If the mysql-client done to install, then we connect the sql one to vm. Run command like this (input the sql instance ip address).
+<br> ![Capture](Material/23.png) <br>
+
+21. Now we create new database.
+<br> ![Capture](Material/24.png) <br>
+
+22. And create table from the database. Use this command to create.
+<br> ![Capture](Material/25.png) <br>
+
+
+
+
+
+
+
+
+
 
 
 

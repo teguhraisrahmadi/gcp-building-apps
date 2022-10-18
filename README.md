@@ -11,9 +11,9 @@ We will use several step for configuration this project and provision :
 And in this project, we using lifecycle management for cloud storage.
 
 This is the architecture what we want to build on GCP.
-
+<br> ![Capture](Material/1.jpg) <br>
 
 Now, lets do it,
 
 1. Go to compute engine option, enable and create a VM
-
+<br> ![Capture](Material/2.png) <br>

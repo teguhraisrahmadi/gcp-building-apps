@@ -15,5 +15,5 @@ This is the architecture what we want to build on GCP.
 
 Now, lets do it,
 
-1. Go to compute engine option, enable and create a VM.
+1. Go to compute engine option, enable and create a VM
 

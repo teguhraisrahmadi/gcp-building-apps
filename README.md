@@ -82,6 +82,37 @@ Now, lets do it,
 
 22. And create table from the database. Use this command to create.
 <br> ![Capture](Material/25.png) <br>
+<br> ![Capture](Material/26.png) <br>
+
+23. Run “show tables” to see the table of database.
+<br> ![Capture](Material/27.png) <br>
+
+24. Now the cloud sql instance and vm was connected. Next we configure cloud storage to save any media file from web input. Go to cloud storage and create a bucket.
+<br> ![Capture](Material/28.png) <br>
+
+25. Set the name of bucket.
+<br> ![Capture](Material/29.png) <br>
+
+26. And set the region.
+<br> ![Capture](Material/30.png) <br>
+
+27. Choose standar storage.
+<br> ![Capture](Material/31.png) <br>
+
+28. Set the default one.
+<br> ![Capture](Material/32.png) <br>
+
+29. And then create.
+<br> ![Capture](Material/33.png) <br>
+
+30. Now we was created the bucket of storage.
+<br> ![Capture](Material/34.png) <br>
+
+31. Now we config the back-end code before deploy to vm. I already have source code for back-end (disclaimer : this source code from dicoding), and then config. Config for TODO code imgUpload.js.
+<br> ![Capture](Material/35.png) <br>
+
+32. Config for TODO code record.js.
+<br> ![Capture](Material/36.png) <br>
 
 
 

@@ -238,7 +238,7 @@ Now, lets do it,
     - “gcloud config set project [PROJECT_ID]”
 <br> ![Capture](Material/75.png) <br>
 
-71. I already have the front –end code. You can download all the code from “https://github.com/teguhraisrahmadi/building-apps.git”. Run this command to clone source code from github, 
+71. I already have the front–end code. You can download all the code from “https://github.com/teguhraisrahmadi/building-apps.git”. Run this command to clone source code from github, 
     - “git clone https://github.com/teguhraisrahmadi/building-apps.git --branch=front-end --single-branch”.
 <br> ![Capture](Material/76.png) <br>
 

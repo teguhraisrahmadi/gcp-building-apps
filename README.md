@@ -270,6 +270,4 @@ Now, lets do it,
 80. You can click attachment to see the file.
 <br> ![Capture](Material/86.png) <br>
 
-Done,
-
-Thanks.
+Done, Thanks.

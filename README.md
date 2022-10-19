@@ -114,6 +114,41 @@ Now, lets do it,
 32. Config for TODO code record.js.
 <br> ![Capture](Material/36.png) <br>
 
+33. And then we create key for serviceaccountkey.json from google cloud platform. This key we use for acces gcs to create any object to there. Go to service account menu. And then click create service account.
+<br> ![Capture](Material/37.png) <br>
+
+34. Fill any requirement to the field.
+<br> ![Capture](Material/38.png) <br>
+
+35. Select role for this service. You can follow the below this capture. Then continue.
+<br> ![Capture](Material/39.png) <br>
+
+36. Just field Service account users role. Field your google cloud account who develop back-end program in compute engine (exp, user@gmail.com). Then click done.
+<br> ![Capture](Material/40.png) <br>
+
+37. You can see, the service account was created. Then we will create the key. Click the service account.
+<br> ![Capture](Material/41.png) <br>
+
+38. Go to the key, and click add key, then create new key.
+<br> ![Capture](Material/42.png) <br>
+
+39. Choose JSON and then click create.
+<br> ![Capture](Material/41.png) <br>
+
+40. You will noticed that the key was download to your local pc. Then use the key for your serviceaccountkey.json. just replace it.
+<br> ![Capture](Material/43.png) <br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

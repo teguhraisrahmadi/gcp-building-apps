@@ -142,27 +142,134 @@ Now, lets do it,
 <br> ![Capture](Material/45.png) <br>
 <br> ![Capture](Material/46.png) <br>
 
-43. 
+43. Vm was stop. Now we re-setting the service account for this vm. Click the vm. Then click edit.
+<br> ![Capture](Material/47.png) <br>
 
+44. Scroll down until service account menu. And then choose service account was we created before. Then click save.
+<br> ![Capture](Material/48.png) <br>
 
+45. After we set it, then start the vm again. You can see vm was running.
+<br> ![Capture](Material/49.png) <br>
 
+46. Go to the vm, then following this command : 
+    - sudo apt-get update
+    - sudo apt-get install nodejs npm
+    - sudo apt install git
+<br> ![Capture](Material/50.png) <br>
 
+47. Now we check npm dan node version was installed.
+<br> ![Capture](Material/51.png) <br>
 
+48. Now we deploy the back-end code in vm. I already have the code in this vm. You can download all the code from “https://github.com/teguhraisrahmadi/building-apps.git”. 
+- Run this command to clone source code from github “git clone https://github.com/teguhraisrahmadi/building-apps.git --branch=back-end --single-branch”.
+<br> ![Capture](Material/52.png) <br>
 
+49. Go to the file.
+<br> ![Capture](Material/53.png) <br>
 
+50. Before we deploy the back-end program, we will set the firewall to allow acces from outside world to this vm. Right, go to vpc network firewall setting. Then click create firewall rule.
+<br> ![Capture](Material/54.png) <br>
 
+51. Fill the name and description.
+<br> ![Capture](Material/55.png) <br>
 
+52. Scroll down, then choose targets to Specified service account. Then choose Target service account to service account was we created. 
+<br> ![Capture](Material/56.png) <br>
 
+53. Fill source IPv4 ranges to 0.0.0.0/0. For protocol choose TCP and fill port 8000,8080,80.
+<br> ![Capture](Material/57.png) <br>
 
+54. Scroll down, then click create.
+<br> ![Capture](Material/58.png) <br>
 
+55. You can see, the firewall was created.
+<br> ![Capture](Material/59.png) <br>
 
+56. Now we back to compute engine, and deploy the back-end apps. Note, before we deployed the code, make sure you was replaced serviceaccountkey.json with new service account was we download before. If was, just following this command to deploy the back-end apps : 
+    - npm install
+    - npm run start
+<br> ![Capture](Material/60.png) <br>
 
+57. You can see the respone from “http://ip_public:8000”
+<br> ![Capture](Material/61.png) <br>
 
+58. The response was success that’s mean back-end program was success deployed. So, for the best experience tools, we use nginx for reverse proxy this server. Install the nginx,
+    - “sudo apt-get install nginx”
+<br> ![Capture](Material/62.png) <br>
 
+59. Go to /etc/nginx/conf.d directory. Then create file backend.conf.
+<br> ![Capture](Material/63.png) <br>
 
+60. Then write this configuration.
+<br> ![Capture](Material/64.png) <br>
 
+61. Now we test the nginx configuration file. If success, then reload the nginx service.
+<br> ![Capture](Material/65.png) <br>
 
+62. You can see, it was success acces the back-end program without write the 8000 port.
+<br> ![Capture](Material/66.png) <br>
 
+63. For the best experience running back-end, we use pm2 for process manager. Now we install the pm2 in the back-end directory.
+    - sudo npm install –g pm2
+<br> ![Capture](Material/67.png) <br>
 
+64. You can start your program just run this command :
+    - pm2 start app.js
+<br> ![Capture](Material/68.png) <br>
 
+65. And you can stop the program just run this command : 
+    - Pm2 stop app.js
+<br> ![Capture](Material/69.png) <br>
 
+66. You can see, when we run “pm2 start app.js”, back-end apps was success running on the vm.
+<br> ![Capture](Material/70.png) <br>
+
+67. Next step we will deploy the front-end apps to app engine. Go to app engine and click open In new window.
+<br> ![Capture](Material/71.png) <br>
+
+68. Open editor.
+<br> ![Capture](Material/72.png) <br>
+
+69. You can see the editor from cloud shell here. Then open new terminal.
+<br> ![Capture](Material/73.png) <br>
+<br> ![Capture](Material/74.png) <br>
+
+70. Open the project :
+    - “gcloud config set project [PROJECT_ID]”
+<br> ![Capture](Material/75.png) <br>
+
+71. I already have the front –end code. You can download all the code from “https://github.com/teguhraisrahmadi/building-apps.git”. Run this command to clone source code from github, 
+    - “git clone https://github.com/teguhraisrahmadi/building-apps.git --branch=front-end --single-branch”.
+<br> ![Capture](Material/76.png) <br>
+
+72. Now, open the folder, and choose directory was we clone before.
+<br> ![Capture](Material/77.png) <br>
+
+73. Now we entered to the directory.
+<br> ![Capture](Material/78.png) <br>
+
+74. Got to : application -> config -> config.php. fill base url in todo code
+<br> ![Capture](Material/79.png) <br>
+
+75. application -> models -> Record_model.php. then fill the API url was we created on compute engine.
+<br> ![Capture](Material/80.png) <br>
+
+76. Save and deployed the front-end in app engine.
+<br> ![Capture](Material/81.png) <br>
+
+77. Now you can open the application from http://building-apps-dot-empirical-state-358113.et.r.appspot.com
+<br> ![Capture](Material/82.png) <br>
+<br> ![Capture](Material/83.png) <br>
+
+78. You can add records for new insert data to the application. And you can choose file upload to gcs storage. Then click submit.
+<br> ![Capture](Material/84.png) <br>
+
+79. In records menu, you have new data was created.
+<br> ![Capture](Material/85.png) <br>
+
+80. You can click attachment to see the file.
+<br> ![Capture](Material/86.png) <br>
+
+Done,
+
+Thanks.

@@ -132,17 +132,16 @@ Now, lets do it,
 38. Go to the key, and click add key, then create new key.
 <br> ![Capture](Material/42.png) <br>
 
-39. Choose JSON and then click create.
-<br> ![Capture](Material/41.png) <br>
-
-40. You will noticed that the key was download to your local pc. Then use the key for your serviceaccountkey.json. just replace it.
+40. Choose JSON and then click create.
 <br> ![Capture](Material/43.png) <br>
 
+41. You will noticed that the key was download to your local pc. Then use the key for your serviceaccountkey.json. just replace it.
+<br> ![Capture](Material/44.png) <br>
 
+42. Now go to compute engine. We will deploy back-end apps using node js. But before deployed, we must set this service account to the compute engine. So we must stop the vm then re-setting the service account.
+<br> ![Capture](Material/45.png) <br>
 
-
-
-
+43. 
 
 
 

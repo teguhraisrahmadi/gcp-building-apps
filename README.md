@@ -140,6 +140,7 @@ Now, lets do it,
 
 42. Now go to compute engine. We will deploy back-end apps using node js. But before deployed, we must set this service account to the compute engine. So we must stop the vm then re-setting the service account.
 <br> ![Capture](Material/45.png) <br>
+<br> ![Capture](Material/46.png) <br>
 
 43. 
 

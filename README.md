@@ -114,13 +114,13 @@ Now, lets do it,
 32. Config for TODO code record.js.
 <br> ![Capture](Material/36.png) <br>
 
-33. And then we create key for serviceaccountkey.json from google cloud platform. This key we use for acces gcs to create any object to there. Go to service account menu. And then click create service account.
+33. And then we create key for serviceaccountkey.json from google cloud platform. This key we use for access gcs to create any object to there. Go to service account menu. And then click create service account.
 <br> ![Capture](Material/37.png) <br>
 
 34. Fill any requirement to the field.
 <br> ![Capture](Material/38.png) <br>
 
-35. Select role for this service. You can follow the below this capture. Then continue.
+35. Select role for this service. You can follow the option below this capture. Then continue.
 <br> ![Capture](Material/39.png) <br>
 
 36. Just field Service account users role. Field your google cloud account who develop back-end program in compute engine (exp, user@gmail.com). Then click done.
@@ -173,7 +173,7 @@ Now, lets do it,
 51. Fill the name and description.
 <br> ![Capture](Material/55.png) <br>
 
-52. Scroll down, then choose targets to Specified service account. Then choose Target service account to service account was we created. 
+52. Scroll down, then choose targets to specified service account. Then choose Target service account to service account was we created. 
 <br> ![Capture](Material/56.png) <br>
 
 53. Fill source IPv4 ranges to 0.0.0.0/0. For protocol choose TCP and fill port 8000,8080,80.
